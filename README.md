@@ -4,3 +4,5 @@ This is a professional portfolio, belonging to Aaron Keller, detailing various a
 
 This code includes proper semantic HTML elements, various CSS calls to support greater functionality, and product cards to further clarify developed projects distrubuted on the web.
 
+Media screens are added to contribute to accessable sizing for various media platforms.
+
