@@ -20,12 +20,13 @@ header h1 {
 }
 
 header nav {
-  padding-top: 15px;
-  margin-right: 20px;
+  padding: 15px;
+  margin: 20px;
   float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', "Calibri" , 'Trebuchet MS', sans-serif;
   font-size: 25px;
   color: lightgray;
+  background-color: darkgray;
 }
 
 header nav ul {
@@ -49,7 +50,7 @@ main {
 
 section { 
   margin-bottom: 20px;
-  padding: 50px;
+  padding: 35px;
   height: auto;
   font-family: 'Gill Sans', 'Gill Sans MT', "Calibri" , 'Trebuchet MS', cursive;
   background-color: black;
@@ -61,7 +62,7 @@ section {
 }
 
 .aboutmeclass img {
-  padding: 6px;
+  padding: -6px;
   display: grid;
   max-width: 100%;
   max-height: auto;
@@ -72,11 +73,64 @@ section {
   vertical-align: middle;
 }
 
-.projectclass img {
-  padding: 6px;
-  display: grid;
-  max-width: 100%;
-  max-height: auto;
+.row {
+ display: grid;
+ flex-direction: row;
+ justify-content: center;
+ flex-flow: wrap;
+}
+
+.card {
+ width: 20%;
+ border: 1px solid #ccc;
+ margin-bottom: 50px;
+ transition: 0.3s;
+}
+
+.card-header {
+ text-align: center;
+ padding: 50px 10px;
+ background: linear-gradient(to right, darkgray, silver);
+ color: #fff;
+}
+.card-body {
+ padding: 30px 20px;
+ text-align: center;
+ font-size: 18px;
+}
+
+.card-body .btn {
+ display: block;
+ color: #fff;
+ text-align: center;
+ background: linear-gradient(to right, grey, white);
+ margin-top: 30px;
+ text-decoration: none;
+ padding: 10px 5px;
+}
+
+.card :hover {
+ transform: scale(1.05);
+ box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+  width: 100%;
+}
+
+.heading{
+  padding: 20px;
+  font-size: 20px;
+}
+
+ .card {
+  width: 80%;
 }
 
 .contactclass {
