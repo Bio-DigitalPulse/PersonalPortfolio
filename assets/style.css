@@ -73,9 +73,13 @@ section {
   vertical-align: middle;
 }
 
-p {
+p, .bg1 {
   font-size: 20px;
 }
+
+a:active, a:visited {
+  color: #fff;
+  }
 
 .button-container {
   display: grid;
