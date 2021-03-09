@@ -77,7 +77,7 @@ p, .bg1 {
   font-size: 20px;
 }
 
-a:active, a:visited {
+a:active, a:visited, a:link {
   color: #fff;
   }
 
