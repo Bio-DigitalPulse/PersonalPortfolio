@@ -5,13 +5,13 @@
 }
 
 body {
-  background-color: #d9dcd6;
+  background-color: grey;
 }
 
 header {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: grey;
+  background-color: black;
   color: #ffffff;
 }
 
@@ -26,7 +26,7 @@ header nav {
   font-family: 'Gill Sans', 'Gill Sans MT', "Calibri" , 'Trebuchet MS', sans-serif;
   font-size: 25px;
   color: lightgray;
-  background-color: darkgray;
+  background-color: grey;
 }
 
 header nav ul {
@@ -73,64 +73,42 @@ section {
   vertical-align: middle;
 }
 
-.row {
- display: grid;
- flex-direction: row;
- justify-content: center;
- flex-flow: wrap;
-}
-
-.card {
- width: 20%;
- border: 1px solid #ccc;
- margin-bottom: 50px;
- transition: 0.3s;
-}
-
-.card-header {
- text-align: center;
- padding: 50px 10px;
- background: linear-gradient(to right, darkgray, silver);
- color: #fff;
-}
-.card-body {
- padding: 30px 20px;
- text-align: center;
- font-size: 18px;
-}
-
-.card-body .btn {
- display: block;
- color: #fff;
- text-align: center;
- background: linear-gradient(to right, grey, white);
- margin-top: 30px;
- text-decoration: none;
- padding: 10px 5px;
-}
-
-.card :hover {
- transform: scale(1.05);
- box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-}
-
-@media screen and (max-width: 1000px) {
-  .card {
-  width: 40%;
-}
-
-@media screen and (max-width: 1000px) {
-  .container {
-  width: 100%;
-}
-
-.heading{
-  padding: 20px;
+p {
   font-size: 20px;
 }
 
- .card {
-  width: 80%;
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.button-container > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transition: all 0.5s ease-in;
+}
+
+.button-container > div:hover {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+.button-container > div:nth-of-type(1) {
+  grid-column: 1 / 4;
+}
+
+.bg1 {
+  background: url('https://i.ibb.co/dBLbrRV/bg1.jpg');
 }
 
 .contactclass {
@@ -151,6 +129,15 @@ section {
   margin-left: 25px;
   margin-right: 25px;
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  color: #ffffff;
+}
+
 
 @media screen and (max-width: 768px) {
 

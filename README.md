@@ -6,3 +6,8 @@ This code includes proper semantic HTML elements, various CSS calls to support g
 
 Media screens are added to contribute to accessable sizing for various media platforms.
 
+Employed a CSS grid format to finish the project card installation, tweaked it to desired functionality, although lacking adequate URL links to external, these will be added later as projects go live.
+
+Added comments for further clarification on HTML elements.
+
+Contact information supplied for accessability
