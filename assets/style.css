@@ -1,3 +1,4 @@
+  
 * {
   box-sizing:border-box;
   margin: 0px;
@@ -20,6 +21,7 @@ header h1 {
 }
 
 header nav {
+  height: 100vh;
   padding: 15px;
   margin: 20px;
   float: right;
@@ -57,13 +59,20 @@ section {
   color: #ffffff;
 }
 
+figure {
+  padding: 5px;
+}
+
+#aboutme {
+  margin-top: 5px;;
+}
 .aboutmeclass {
   display: table;
 }
 
 .aboutmeclass img {
-  padding: -6px;
-  display: grid;
+  padding: 6px;
+  display: flex;
   max-width: 100%;
   max-height: auto;
 }
@@ -81,15 +90,15 @@ a:active, a:visited, a:link {
   color: #fff;
   }
 
-.button-container {
+.container-fluid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
 
-.button-container > div {
+.container-fluid > div {
   cursor: pointer;
-  height: 210px;
+  height: 170px;
   background-size: cover;
   background-attachment: fixed;
 
@@ -102,12 +111,12 @@ a:active, a:visited, a:link {
   transition: all 0.5s ease-in;
 }
 
-.button-container > div:hover {
+.container-fluid > div:hover {
   opacity: 0.7;
   transform: scale(0.98);
 }
 
-.button-container > div:nth-of-type(1) {
+.container-fluid > div:nth-of-type(1) {
   grid-column: 1 / 4;
 }
 
