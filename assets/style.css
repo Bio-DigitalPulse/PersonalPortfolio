@@ -71,13 +71,12 @@ figure {
 }
 
 .aboutmeclass img {
-  padding: 6px;
-  display: flex;
-  max-width: 100%;
-  max-height: auto;
+  padding: 15px;
+  object-fit: contain;
 }
 
 .aboutmeclass span {
+  padding: 10px;
   display: table-cell;
   vertical-align: middle;
 }
